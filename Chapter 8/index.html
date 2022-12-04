@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation and Transformation</title>
+    <style>
+      .container {
+        background-color: red;
+        height: 445px;
+      }
+      .box {
+        border: 2px solid black;
+        /* transform: translate(34px) rotate(45deg); */
+        transform-origin: 0;
+        /* transform: scale(4, 5); */
+        /* transform: scaleX(7);
+        transform: scaley(4); */
+        /* transform: skew(4deg, 6deg); */
+        /* transform: rotate X(45deg); */
+        width: 440px;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+      }
+      .box:hover {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cum
+        deserunt fugit consequatur laudantium repellat aspernatur amet pariatur!
+        Quam libero aliquam ipsum magnam quas cupiditate veritatis, aperiam
+        numquam ipsam cum dolor similique dolorum ad!
+      </div>
+    </div>
+  </body>
+</html>
